@@ -58,7 +58,7 @@ export default function Pokemon(): JSX.Element {
 
   return (
     <Container>
-      <Link to="/">
+      <Link to="/pokemon-index">
         <img src={BackButton} alt="Back button" />
       </Link>
       {!response ? (
