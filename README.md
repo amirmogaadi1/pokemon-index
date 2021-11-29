@@ -1,6 +1,6 @@
 # Pokemon index API 
 
-The projet includes a data fetching from the pokemon provided api .
+The projet includes a data fetching from the provided api pokemon.
 
 ## Technologies Used
 
