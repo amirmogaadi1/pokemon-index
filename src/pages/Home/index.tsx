@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 
-import { Container, MainTitle, Loading, Search } from './styles';
+import { Container, MainTitle, Pagination, Loading, Search } from './styles';
 import PokemonLogo from '../../assets/pokemon.png';
 import PokemonBall from '../../assets/pokeball.png';
 import LoadingIcon from '../../assets/loading.png';
@@ -96,7 +96,11 @@ export default function Home(): JSX.Element {
               return null;
             })}
           </Grid>
-        
+
+          <Pagination isFirstPage={!response.previous}>
+            <p onClick={() => changePage('previous')}>Previous | </p>
+            <p onClick={() => changePage('next')}>Next</p>
+          </Pagination>
         </>
       )}
     </Container>
